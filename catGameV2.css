@@ -1,0 +1,205 @@
+#void {
+    /* CSS HEX */
+--almond: #ede0d4ff;
+--desert-sand: #e6ccb2ff;
+--tan: #ddb892ff;
+--cafe-au-lait: #b08968ff;
+--coffee: #7f5539ff;
+--brown-sugar: #9c6644ff;
+--brown-sugar: rgb(226, 131, 71);
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "Architects Daughter",Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #9c6644ff;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: purple;
+    min-height: 5rem;
+    width: 100%;
+    margin-top: 5rem;
+    padding:0 2px 1em;
+
+    background-color: #ddb892ff;
+    box-shadow: 0 0.25rem 0.25rem 0rem black;
+    z-index: 2;
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+footer {
+    background-color: green;
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    padding:0 2px;
+
+    background-color: #ddb892ff;
+    box-shadow: 0 0.25rem 0.25rem 0rem black;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #ede0d4ff;
+    text-shadow: 0.125rem 0.25rem 1rem #000;
+}
+
+h2 {
+    font-size: 3rem;
+    color:rgb(50, 50, 50);
+    position: relative;
+    bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color:rgba(50, 50, 50, 1);  
+}
+
+#kittyLitter{
+    background-color: #e6ccb2ff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#h3Restart{
+    font-size: 4rem;
+}
+
+#mainWindow {
+    width: 95%;
+    max-width: 937px;
+    height: 95%;
+    box-shadow: 0em 0.25rem 0.5rem 0.25rem #7f5539ff;
+    border-radius: 5rem;    
+    background-color: #b08968ff;
+    flex-direction: column;
+}
+
+#leftSide {
+/* background-color: green; */
+    flex-direction: column;
+    position: relative;
+}
+
+#leftSide img {
+    border-radius: 2rem;
+    width: 80%;
+    z-index: 1;
+    transition: all 2s;
+}
+
+#rightSide{
+/* background-color: blue; */
+    z-index: 2;
+}
+
+#random {
+/* background-color: violet; */
+    height: 70%;
+}
+
+#buttons {
+    height: 30%;
+}
+
+#buttons button {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgb(225, 160, 63);
+    box-shadow: 0 0 0.25rem 0.25rem rgb(225, 160, 63), 0 0 .5rem .25rem #7f5539ff;
+    margin: 1rem;
+}
+
+#buttons button:active {
+    box-shadow: 0 0 0.125rem 0.125rem rgb(225, 160, 63), 0 0 .25rem .125rem #7f5539ff;
+    margin-bottom: 10px;
+}
+
+#catFaces {
+    /* background-color: yellowgreen; */
+    max-width: 95%;
+    max-height: 90%;
+    display: inline-block;
+    margin-left: 1rem;
+    
+}
+/* how did i center these? */
+#catFaces img{
+    width: 100px;
+    margin: 0 5px;
+}
+
+.fdFull {
+    height: 100%;
+    width: 100%;
+}
+
+.fdRows {
+    width: 50%;
+    height: 100%;
+}
+
+.fdColumns {
+    width: 100%;
+}
+
+.centerChildren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.restartClass{
+    display: none;
+}
+
+/* .restartClear {
+    color:rgba(50, 50, 50, 0);
+    transform: rotate(-2turn);
+    position: absolute;
+} */
+
+#kittyGallery{
+    position: absolute;
+    top: 100vh;
+
+    
+}
+
+.litterArray{
+    border-radius: 2rem;
+}
+
+@media (orientation: portrait){
+    #buttons button {
+    height: 75px;
+    width: 75px;
+    font-size: 4rem;
+    } 
+}
